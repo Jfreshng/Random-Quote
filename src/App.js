@@ -7,7 +7,7 @@ function App() {
   const [errMsg, setErrMsg] = useState(null);
 
   const generateQuote = ()=> {
-    axios.get('https://api.adviceslip.com/advice')
+    axios.get('git')
     .then((res)=> {
         //destructuring 
         const {advice} = res.data.slip.advice;  // doesn't work
